@@ -11,22 +11,12 @@
     * ALLJOYN_DIR(版本:14.02)，比如官方的SDK，根目录包括bin,inc,lib等目录
     * BOOST_DIR(版本:1.53)，根目录包括boost头文件夹和lib库目录，库需自己编译，教程可参考网络
     
-	关于mongo-cxx的库不太好找，又不太大，所以就把库和头文件直接放到了项目目录mongodb中；
-	tinyxml库也很小，直接放入
+	* mongo-cxx的库不太好找，又不太大，所以就把库和头文件直接放到了项目目录mongodb中；
+	* tinyxml库也很小，直接放入
 * 添加各模块的库目录路径和头文件目录
 * 编译alljoyn程序所要求的库有
-    * alljoyn.lib
-ajrouter.lib
-BundledRouter.obj
-ws2_32.lib
-crypt32.lib
-iphlpapi.lib
-Secur32.lib
-Bcrypt.lib
-Ncrypt.lib
-	
+    * alljoyn.lib ajrouter.lib BundledRouter.obj ws2_32.lib crypt32.lib iphlpapi.lib Secur32.lib Bcrypt.lib Ncrypt.lib
     * tinyxml库
-	
 	* 至于mongoclient库和boost库，它有自动识别机制，所以不用添加具体文件
 
 * 注意在工程属性的预处理器里添加符号QCC_OS_GROUP_WINDOWS、UNICODE，否则出现以下问题：
@@ -35,3 +25,5 @@ Ncrypt.lib
 	必须在属性-c/c++-所有选项-附加选项中填入：/vmm /vmg %(AdditionalOptions)，否则运行时出现错误：The value of ESP not properly saved...
 	
 * 由于boost和mongoclient都是动态链接，所以运行程序前要保证能找到正确的dll
+
+项目维护人：**陈仕**
