@@ -1,0 +1,9 @@
+<mongodb>
+	<hostport>localhost:27017</hostport>
+	
+	<database name="alljoyn">
+		<collection name="clientdesc" />
+    <collection name="config" />
+	</database>
+	
+</mongodb>

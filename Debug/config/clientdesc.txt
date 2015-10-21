@@ -1,0 +1,11 @@
+{
+	"Joiner":"",
+	"ASName": "",
+	"ASDescription": "",
+	"ASType": "",
+	"ASURL": "",
+	"ASMethod": "",
+	"ASContent": "",
+	"ASRequestHeader": "",
+	"ASResponseUnit": ""
+}

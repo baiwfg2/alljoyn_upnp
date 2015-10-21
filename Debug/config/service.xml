@@ -1,0 +1,15 @@
+<services>
+  
+  <service>
+    <name>org.alljoyn.service.test</name>
+	  <intfname>org.alljoyn.intf.test</intfname>
+    <objpath>/service</objpath>
+    <sessionport>250</sessionport>
+    
+    <command>
+      <name>cmd</name>
+      <timeout>30000</timeout>
+    </command>
+  </service>
+  
+</services>

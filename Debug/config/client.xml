@@ -1,0 +1,12 @@
+<clients>
+  
+  <client>
+    <name>org.alljoyn.service.test</name>
+    <intfname>org.alljoyn.intf.test</intfname>
+    <objpath>/client</objpath>
+    <sessionport>250</sessionport>
+
+    <command>cmd</command>
+  </client>
+  
+</clients>
