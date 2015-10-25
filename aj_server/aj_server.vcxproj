@@ -43,13 +43,13 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir)\tinyxml;$(ProjectDir)\mongodb;$(BOOST_DIR);$(ALLJOYN_DIR)\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\tinyxml;$(MONGO_CXX_DIR)\include;$(BOOST_DIR);$(ALLJOYN_DIR)\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>QCC_OS_GROUP_WINDOWS;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/vmm /vmg %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(ProjectDir)\tinyxml;$(ProjectDir)\mongodb;$(ALLJOYN_DIR)\lib;$(BOOST_DIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)\tinyxml;$(MONGO_CXX_DIR)\lib;$(ALLJOYN_DIR)\lib;$(BOOST_DIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>tinyxmld.lib;alljoyn.lib;ajrouter.lib;BundledRouter.obj;ws2_32.lib;crypt32.lib;iphlpapi.lib;Secur32.lib;Bcrypt.lib;Ncrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>

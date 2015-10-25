@@ -1,9 +1,10 @@
 /*
-	1、刚开始会为在c++中到底是使用cout还是printf而纠结，因为官方代码很多用了printf，如果改成cout很费力
-	混用我又觉得别扭。看了网友的说法，还是不管这事吧，按习惯来。有人说cout在于简洁，printf在于效率
+	1、刚开始会为在c++中到底是使用cout还是printf而纠结，因为官方代码很多用了printf，
+	如果改成cout很费力混用我又觉得别扭。看了网友的说法，还是不管这事吧，按习惯来。
+	有人说cout在于简洁，printf在于效率
 
-	2、由于BusAttachment,BusListener,BusObject之间关系交错，所以暂时未用将一个作为另外一个的成员变量
-	的方法，而是采取了全部定义全局变量，然后在其它文件中引用来解决
+	2、由于BusAttachment,BusListener,BusObject之间关系交错，所以暂时未用将一个
+	作为另外一个的成员变量的方法，而是采取了全部定义全局变量，然后在其它文件中引用来解决
 */
 
 #include "mongodb.h"
@@ -36,7 +37,7 @@ void initWinSock()
 }
 
 // 可进一步增加命令行选项
-#define	MYDEBUG
+//#define	MYDEBUG
 int main(int argc, char** argv)
 {
 #ifdef MYDEBUG
@@ -101,19 +102,3 @@ int main(int argc, char** argv)
     }
     return (int) status;
 }
-
-/*
-//这个不能编译成功，转而用boost
-char* GetLocalTime()
-{
-	time_t t = time(NULL);
-	static char tmp[32];
-	strftime(tmp,sizeof(tmp),"%Y/%m/%d %X",mongo::localtime(&t));
-	return tmp;
-}
-*/
-
-
-
-
-

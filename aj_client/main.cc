@@ -61,10 +61,6 @@ QStatus doTheLoop()
 // 怎样更改窗口标题呢？
 int main(int argc, char** argv)
 {
-	//HWND hOut = FindWindow(NULL,(LPCWSTR)"QQ");
-	//SetConsoleTitle("abc");
-	//SetWindowText(hOut,(LPCWSTR)"abc");
-
 	parseClientXml("config\\client.xml");//相对于工程文件目录
 	readDescFile("config\\clientdesc.txt");
 	

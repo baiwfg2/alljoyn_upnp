@@ -1,5 +1,5 @@
 <mongodb>
-	<hostport>localhost:27017</hostport>
+	<hostport>123.57.66.151:27017</hostport>
 	
 	<database name="alljoyn">
 		<collection name="clientdesc" />
